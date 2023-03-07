@@ -9,9 +9,9 @@ int main(){
         for(std::string &v : list){
             std::cout << "test result 1" << v << " |" << std::endl;
         }
-     }catch (const std::ios_base::failure& e) { 
+    }catch (const std::ios_base::failure& e) { 
         std::cerr << e.what() << std::endl;
-
-     }
+        return 1;
+    }
     return 0;
 }
